@@ -1,0 +1,39 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>colorScheme</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a316831eb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input required id="color-input" type="color">
+            <div class="dropdown">
+                <button id="color-mode-button" ><p>Monochrome</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 7L10 14L3 7" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul id='sub-menus' class="unclicked">
+                    <li><a>Monochrome</a></li>
+                    <li><a>Monochrome-dark</a></li>
+                    <li><a>Monochrome-light</a></li>
+                    <li><a>Analogic</a></li>
+                    <li><a>Complement</a></li>
+                    <li><a>Analogic-complement</a></li>
+                    <li><a>Triad</a></li>
+                </ul>
+            </div>
+            <button id="get-color-button">Get color scheme</button>
+        </div>
+        <div id="colors-result"></div>
+    </div>
+    <p class="alert hidden">color HEX copied to clipboard</p>
+        <script src="index.js"></script>
+</body>
+</html>
